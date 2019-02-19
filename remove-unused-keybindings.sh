@@ -5,7 +5,7 @@ function process {
 	if [ $? -eq 0 ]; then
 		remove $1
 	else
-		echo "- Binding not bound; Skipping deletion"
+		echo "- Binding not found; Skipping deletion"
 	fi
 }
 
@@ -20,3 +20,4 @@ function remove {
 }
 
 process /commands/custom/Super_L
+process /commands/custom/Super_R
