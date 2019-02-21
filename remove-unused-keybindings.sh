@@ -7,6 +7,7 @@ function process {
 	else
 		echo "- Binding not found; Skipping deletion"
 	fi
+	echo ""
 }
 
 function binding {
@@ -19,5 +20,6 @@ function remove {
 	xfconf-query -v -c xfce4-keyboard-shortcuts -p $1 -r
 }
 
-process /commands/custom/Super_L
-process /commands/custom/Super_R
+process "/commands/custom/Super_L"
+process "/commands/custom/Super_R"
+process "/commands/custom/<Primary><Alt>Delete"
